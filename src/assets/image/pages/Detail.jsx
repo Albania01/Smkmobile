@@ -1,4 +1,4 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
 
 const Detail = () => {
@@ -26,19 +26,14 @@ const Detail = () => {
             source={require('../Frame.png')}
           />
         </View>
-        <View
-          style={{
-            marginTop: 0,
-            justifyContent: 'space-between',
-            flexDirection: 'column',
-          }}>
+        <View>
           <Text
             style={{
               fontSize: 12,
               color: 'black',
               fontWeight: 'bold',
               marginLeft: 16,
-              marginTop: 1,
+
             }}>
             kembali
           </Text>
@@ -105,7 +100,46 @@ const Detail = () => {
         }}>
             Massukan Jumlah Pesanan</Text>
       </View>
+       <View>
+           <TextInput placeholder='masukan jumlah pesanan' style={{
+            borderWidth: 1,
+            marginTop: 16,
+            marginLeft: 16,
+            marginRight:16,
+            bordercolor:'gray',
+           }}> 
+
+           </TextInput>
+       </View>
+
+      <View 
+      style={{
+          height: 52,
+          backgroundColor: 'red',
+          borderRadius: 6,
+          marginBottom: 16,
+          marginTop: 120,
+          flexDirection: 'row',
+          alignItems: 'center',
+          marginLeft:16,
+          marginRight: 16,
+          alignItems: 'center',
+         justifyContent:'center'
+        }}>
+            <TouchableOpacity onPress={() => navigation.navigate('Detail')}>
+
+            
+            <Text style={{
+                color: 'white',
+                fontWeight: 'bold',
+                alignSelf:'center'
+            }}>
+                SUKSES
+            </Text>
+            </TouchableOpacity>
+        </View>
     </View>
+
   );
 };
 
