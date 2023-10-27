@@ -1,7 +1,7 @@
 import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const Detail = () => {
+const Detail = ({navigation}) => {
   return (
     <View>
       <View style={{display: 'flex', flexDirection: 'row',  alignItems: 'center', marginTop: 16,}}>
@@ -49,7 +49,7 @@ const Detail = () => {
             marginTop: 32,
             alignSelf: 'center',
           }}
-          source={require('../buger.png')}
+          source={require('../unsplash_-GFCYhoRe48.png')}
         />
       </View>
 
@@ -106,7 +106,8 @@ const Detail = () => {
             marginTop: 16,
             marginLeft: 16,
             marginRight:16,
-            bordercolor:'gray',
+            color:'black',
+            borderColor:'gray'
            }}> 
 
            </TextInput>
@@ -126,7 +127,7 @@ const Detail = () => {
           alignItems: 'center',
          justifyContent:'center'
         }}>
-            <TouchableOpacity onPress={() => navigation.navigate('Detail')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Sukses')}>
 
             
             <Text style={{

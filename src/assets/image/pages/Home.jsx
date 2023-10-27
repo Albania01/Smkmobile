@@ -46,7 +46,7 @@ const Home = ({navigation}) => {
             color: 'black',
             fontSize: 32,
           }}>
-          KANTIN MULTISTUDI
+          Kantin Multistudi
         </Text>
 
         <Text
@@ -79,7 +79,7 @@ const Home = ({navigation}) => {
         </TouchableOpacity>
 
         <Image
-          source={require('../buger.png')}
+          source={require('../p.png')}
           style={{
             marginRight: 6,
             marginTop: 12,
@@ -89,9 +89,72 @@ const Home = ({navigation}) => {
         />
       </View>
 
+ <View style={{
+  justifyContent:'space-between',
+  flexDirection:'row'
+ }}>
+  <Text style={{
+     marginTop:10,
+     marginLeft:40,
+     fontWeight:'bold',
+     color:'black',
+     fontSize:16}}>
+    
+    Burger Keju
+  </Text>
+
+  <Text style={{
+     marginTop:10,
+     marginRight:150,
+     fontWeight:'bold',
+     color:'black',
+     fontSize:16}}>
+    
+    Pizza
+  </Text>
+ </View>
+
+ <View style={{
+  justifyContent:'space-between',
+  flexDirection:'row'
+ }}>
+  <Text style={{
+     marginTop:10,
+     marginLeft:40,
+     fontWeight:'bold',
+     color:'red',
+     fontSize:16}}>
+    
+    Rp.15.000
+  </Text>
+
+  <Text style={{
+     marginTop:10,
+     marginRight:110,
+     fontWeight:'bold',
+     color:'red',
+     fontSize:16}}>
+    
+    Rp.20.000
+  </Text>
+ </View>
+ 
+
+
+ <View style={{
+     marginTop:10,
+     marginLeft:-250,
+     fontWeight:'bold',
+     color:'black',
+     fontSize:16
+ }}>
+  <Text>
+    Burger
+  </Text>
+ </View>
       <Text
         style={{
-          marginTop: 106,
+          marginTop: 10,
           marginLeft: 16,
           fontWeight: 'bold',
           color: 'black',
@@ -106,7 +169,7 @@ const Home = ({navigation}) => {
           flexDirection: 'row',
         }}>
         <Image
-          source={require('../buger.png')}
+          source={require('../m.png')}
           style={{
             marginLeft: 6,
             marginTop: 12,
@@ -116,7 +179,7 @@ const Home = ({navigation}) => {
         />
 
         <Image
-          source={require('../buger.png')}
+          source={require('../k.png')}
           style={{
             marginRight: 6,
             marginTop: 12,
@@ -125,6 +188,64 @@ const Home = ({navigation}) => {
           }}
         />
       </View>
+
+      <View style={{
+  justifyContent:'space-between',
+  flexDirection:'row'
+ }}>
+  <Text style={{
+     marginTop:10,
+     marginLeft:40,
+     fontWeight:'bold',
+     color:'black',
+     fontSize:16}}>
+    
+    Es Milo
+  </Text>
+
+  <Text style={{
+     marginTop:10,
+     marginRight:137,
+     fontWeight:'bold',
+     color:'black',
+     fontSize:16}}>
+    
+    Es Kopi
+  </Text>
+ </View>
+
+ <View style={{
+  justifyContent:'space-between',
+  flexDirection:'row'
+ }}>
+  <Text style={{
+     marginTop:10,
+     marginLeft:40,
+     fontWeight:'bold',
+     color:'red',
+     fontSize:16}}>
+    
+    Rp.10.000
+  </Text>
+
+  <Text style={{
+     marginTop:10,
+     marginRight:120,
+     fontWeight:'bold',
+     color:'red',
+     fontSize:16}}>
+    
+    Rp.8.000
+  </Text>
+ </View>
+ <Text style={{
+  alignSelf:'center',
+  marginTop:12,
+  fontSize:9
+
+ }}>
+  By: Albania
+ </Text>
     </View>
   );
 };
